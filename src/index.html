@@ -29,6 +29,7 @@
           class="card__bookmark-icon"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 24 24"
+          data-js="bookmark"
         >
           <path
             d="M17 3H7c-1.1 0-1.99.9-1.99 2L5 21l7-3 7 3V5c0-1.1-.9-2-2-2z"
@@ -38,8 +39,8 @@
           Lorem ipsum dolor sit amet consectetur adipisicing elit.
           Exercitationem non, architecto commodi quod id asper?
         </p>
-        <button class="button">Show Answer</button>
-        <p class="card__text d-none">
+        <button data-js="buttonAnswerText" class="button">Show Answer</button>
+        <p data-js="answerText" class="card__text d-none">
           Lorem ipsum dolor sit amet consectetur adipisicing elit.
           Exercitationem non, architecto commodi quod id asper?
         </p>
@@ -191,7 +192,7 @@
     </main>
 
     <main data-js="mainCreate" class="main-grid--1column d-none">
-      <form class="form" action="">
+      <form data-js="form" class="form" action="">
         <label for="textarea1"
           >Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos
           placeat, reiciendis natus dolor!</label
@@ -230,7 +231,12 @@
           required
         />
 
-        <input class="button" type="submit" value="Submit" />
+        <input
+          data-js="submitButton"
+          class="button"
+          type="button"
+          value="Submit"
+        />
       </form>
     </main>
 

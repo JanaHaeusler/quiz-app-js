@@ -181,3 +181,25 @@ function addActiveStatusProfileButton() {
 }
 
 /*=======BOOKMARK=====*/
+const bookmark = document.querySelector('[data-js=bookmark]')
+
+bookmark.addEventListener('click', () => {
+  bookmark.classList.toggle('card__bookmark-icon--active')
+})
+
+/*=======SHOW and HIDE ANSWERS=====*/
+const buttonAnswerText = document.querySelector('[data-js=buttonAnswerText]')
+const answerText = document.querySelector('[data-js=answerText]')
+
+buttonAnswerText.addEventListener('click', () => {
+  answerText.classList.toggle('d-none')
+})
+
+/*=======RESET FORM=====*/
+const submitButton = document.querySelector('[data-js=submitButton]')
+
+submitButton.addEventListener('click', () => {
+  document.querySelector('[data-js=form]').reset()
+})
+
+/*=======DARK MODE=====*/
