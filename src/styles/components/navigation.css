@@ -2,10 +2,8 @@
   display: grid;
   grid-auto-flow: column;
   background: var(--primary);
-}
-
-.navigation__link {
-  text-decoration: none;
+  justify-items: center;
+  align-items: center;
 }
 
 .navigation__icon {
